@@ -1,5 +1,5 @@
 import mysql.connector
-import Error
+from mysql.connector import Error
 
 def mysql_connect(hostname,username,password,db):
     try:
@@ -24,4 +24,3 @@ def close_connection(cursor,connection):
         print("MYSQL connection closed")
     except Error as e:
         print(e)
-                
